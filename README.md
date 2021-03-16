@@ -29,16 +29,16 @@ identify diseased plants, potentially saving their crops before they inflict irr
 
 | Model   |training score|Validation Score| Notebook Link |   
 |---------|--------------|----------------|---------------|   
-| Own CNN |  65%         |    67%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/Building_Own_CNN.ipynb)|   
-|ResNet50V2| 100%        |    70%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/ResNet.ipynb)          |   
-|InceptionResNetV2| 90%  |    70%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/InceptionResNet.ipynb) |   
+| Own CNN |  65%         |    67%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Notebooks/Building_Own_CNN.ipynb)|   
+|ResNet50V2| 100%        |    70%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Notebooks/ResNet.ipynb)          |   
+|InceptionResNetV2| 90%  |    70%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Notebooks/InceptionResNet.ipynb) |   
 
 * On Full data 21k images
 
 | Model   |training score|Validation Score| Notebook Link |   
 |---------|--------------|----------------|---------------|   
-|InceptionResNetV2|  94% |    73.69%      |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/InceptionResNetV2.ipynb)|   
-|***CropNet-MobileNetV3***|88% |88% |[link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/Final_Model_CropNet_MobieNetV3ipynb%20(1).ipynb)|   
+|InceptionResNetV2|  94% |    73.69%      |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Notebooks/InceptionResNetV2.ipynb)|   
+|***CropNet-MobileNetV3***|88% |88% |[link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Notebooks/Final_Model_CropNet_MobieNetV3ipynb%20(1).ipynb)|   
 
 * ***Best Model***:-
 >* CropNet-Cassava disease classifier whose architecture is same as MobileNetV3 
