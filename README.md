@@ -22,10 +22,10 @@ identify diseased plants, potentially saving their crops before they inflict irr
 ## ***Approch 1***:-
 * In this approch we solved this problem as ***MultiLabel*** classsification 
 * Trained 3 models(own created cnn, ResNet50V2, InceptionResNetV2) with Hypertuning on sample dataset of 10k images. Got best accuracy with InceptionREsNet of 70%
-* Then trained ***InceptionResNetV2*** on full data and got ***73%*** accuracy
+* Then trained ***CropNet*** from tensorflow hub on full data and got ***88%*** accuracy.
 * Here are some result's of this approch
 
-<img src="https://user-images.githubusercontent.com/75840165/111069968-8a796e80-84f5-11eb-8e86-ace38d1431ce.png" height=200, width=400 />   <img src="https://user-images.githubusercontent.com/75840165/111069972-8cdbc880-84f5-11eb-85e0-669223cca16a.png" height=200, width=400 /> 
-<img src="https://user-images.githubusercontent.com/75840165/111069976-8fd6b900-84f5-11eb-8aaf-21b01d661098.png" height=200, width=400 />     <img src="https://user-images.githubusercontent.com/75840165/111069974-8f3e2280-84f5-11eb-93a2-03a28da34d5f.png" height=200, width=400 />
+<img src="https://user-images.githubusercontent.com/75840165/111299311-cafff600-8675-11eb-8ae4-83aa2b658dbb.png" height=250, weight=350 />    <img src="https://user-images.githubusercontent.com/75840165/111299323-ce937d00-8675-11eb-9d45-11926101c0e7.png" height=250, weight=350 /> 
 
-  
+<img src="https://user-images.githubusercontent.com/75840165/111299331-d05d4080-8675-11eb-9b2a-f1f090b34a2d.png" height=250, weight=350 />  <img src="https://user-images.githubusercontent.com/75840165/111299333-d18e6d80-8675-11eb-8d91-af4cb545e5c3.png" height=250, weight=350 />
+
