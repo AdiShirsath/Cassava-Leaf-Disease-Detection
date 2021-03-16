@@ -16,16 +16,37 @@ identify diseased plants, potentially saving their crops before they inflict irr
 
 ## Data:- 
 >* This is dataset from Kaggle competition 
->* We have train set containing  more than 20k images
->* To know more about dataset i have added dataset_info.md file
+>* We have train set containing  more than 20k images, With train.csv file which contains id for image and labels.
+>* To know more about dataset i have added [dataset_info.md](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Dataset_info.md) file.
 
-## ***Approch 1***:-
-* In this approch we solved this problem as ***MultiLabel*** classsification 
-* Trained 3 models(own created cnn, ResNet50V2, InceptionResNetV2) with Hypertuning on sample dataset of 10k images. Got best accuracy with InceptionREsNet of 70%
-* Then trained ***CropNet*** from tensorflow hub on full data and got ***88%*** accuracy.
-* Here are some result's of this approch
+## ***Preprocessing***:-
+* Converting image pixel's from 0-255 to 0-1 using tensorflow kept size of tensor (224,224,3) 
+* Created tuples of images and respective labels with batch size of 32
+* Preprocessed all data and saved it
 
-<img src="https://user-images.githubusercontent.com/75840165/111299311-cafff600-8675-11eb-8ae4-83aa2b658dbb.png" height=250, weight=350 />    <img src="https://user-images.githubusercontent.com/75840165/111299323-ce937d00-8675-11eb-9d45-11926101c0e7.png" height=250, weight=350 /> 
+## ***Training***:-
+* On Sample Dataset 10K images
 
-<img src="https://user-images.githubusercontent.com/75840165/111299331-d05d4080-8675-11eb-9b2a-f1f090b34a2d.png" height=250, weight=350 />  <img src="https://user-images.githubusercontent.com/75840165/111299333-d18e6d80-8675-11eb-8d91-af4cb545e5c3.png" height=250, weight=350 />
+| Model   |training score|Validation Score| Notebook Link |   
+|---------|--------------|----------------|---------------|   
+| Own CNN |  65%         |    67%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/Building_Own_CNN.ipynb)|   
+|ResNet50V2| 100%        |    70%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/ResNet.ipynb)          |   
+|InceptionResNetV2| 90%  |    70%         |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/InceptionResNet.ipynb) |   
+
+* On Full data 21k images
+
+| Model   |training score|Validation Score| Notebook Link |   
+|---------|--------------|----------------|---------------|   
+|InceptionResNetV2|  94% |    73.69%      |    [link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/InceptionResNetV2.ipynb)|   
+|***CropNet-MobileNetV3***|88% |88% |[link](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/Approch_1/Final_Model_CropNet_MobieNetV3ipynb%20(1).ipynb)|   
+
+* ***Best Model***:-
+>* CropNet-Cassava disease classifier whose architecture is same as MobileNetV3 
+>* This was already trained of Cassava leaf's for 6 classes, Link to this model is here [Tensorflow](https://www.tensorflow.org/hub/tutorials/cropnet_cassava#:~:text=This%20notebook%20shows%20how%20to,disease%2C%20healthy%2C%20or%20unknown.)
+>* We had 5 classes so trained this model by adding own fully connected layer.
+>* Trained model is uploded [here]()  
+
+## Results:-
+<img src="https://user-images.githubusercontent.com/75840165/111299311-cafff600-8675-11eb-8ae4-83aa2b658dbb.png" height=250, weight=350 /><img src="https://user-images.githubusercontent.com/75840165/111299323-ce937d00-8675-11eb-9d45-11926101c0e7.png" height=250, weight=350 />
+<img src="https://user-images.githubusercontent.com/75840165/111299331-d05d4080-8675-11eb-9b2a-f1f090b34a2d.png" height=250, weight=350 /> <img src="https://user-images.githubusercontent.com/75840165/111299333-d18e6d80-8675-11eb-8d91-af4cb545e5c3.png" height=250, weight=350 />
 
