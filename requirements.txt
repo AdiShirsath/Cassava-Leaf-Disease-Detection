@@ -1,0 +1,4 @@
+numpy==1.19.2
+Flask==1.1.2
+tensorflow_hub==0.11.0
+tensorflow==2.4.0
