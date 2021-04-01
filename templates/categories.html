@@ -1,0 +1,115 @@
+<!--extend base file-->
+{% extends 'base.html' %}
+
+<!--title section-->
+{% block title %}
+ Categories
+{% endblock %}
+
+<!-- content section-->
+{% block content %}
+    <!--  categories section -->
+    <h2 class="cat-heading">Disease Categories</h2>
+    <section class="categories-content">
+                 
+
+        <div class="cat-heading">
+
+            <div class="cat-list">
+                <ul>
+                    <li>
+                        <img src="{{url_for('static', filename='images/CBB.jpg')}}">
+                        <br>
+                        <cite>Cassava Bacterial Blight </cite>
+                        <blockquote>Cassava with its long life cycle is affected by several 
+                            diseases of which cassava bacterial blight (CBB) is the major bacterial disease in the cassava
+                             belt worldwide. The epidemiological and ecological investigations undertaken on the disease showed that the causal agent, 
+                             the bacterium Xanthomonas axonopodis pv. manihotis (Xam), possesses several means for survival and dissemination that may play 
+                             an important role as inoculum sources for the infection when favorable conditions occur, and the subsequent damage of the plant
+                              causing severe yield losses.
+                              <br> 
+                              To know more about this disease visit <a href="https://www.intechopen.com/books/cassava/cassava-bacterial-blight-a-devastating-disease-of-cassava">here</a>
+                            </blockquote>
+                        
+                    </li>
+                    <li>
+                        <img src="{{url_for('static', filename='images/CBSD.jpg')}}">
+                        <br>
+                        <cite>Cassava Brown Streak Disease </cite>
+                        <blockquote>assava brown streak virus disease (CBSD) is a damaging disease of cassava plants, and is 
+                            especially troublesome in East Africa. It was first identified in 1936 in Tanzania, and has spread
+                             to other coastal areas of East Africa, from Kenya to Mozambique. Recently, it was found that two distinct 
+                             viruses are responsible for the disease: cassava brown streak virus (CBSV) and Ugandan cassava brown streak virus (UCBSV).
+                              Both have (+)ss RNA genomes, belong to the genus Ipomovirus in the family Potyviridae, and produce generally similar symptoms in 
+                              infected plants.
+                            <br>
+                            To know more about this disease visit <a href="https://www.cabi.org/isc/datasheet/17107">here</a>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <img src="{{url_for('static', filename='images/CGM.jpg')}}">
+                        <br>
+                        <cite>Cassava Green Mottle </cite>
+                        <blockquote>Young leaves are puckered with faint to distinct yellow spots green patterns 
+                            (mosaics), and twisted margins. Usually, the shoots recover from symptoms and appear healthy.
+                             Occasionally, plants become severely stunted, edible roots are absent or, if present, they are small and
+                              woody when cooked.In the lab, the virus can be passed between plants in sap, and also in seed. Thirty percent
+                               of the seed of infected tobacco plants was infected. Whether it also spreads in seed of cassava is unknown.
+                                Seed is not used for growing cassava, so spread on Choiseul is most likely in diseased cuttings. However, 
+                                there are other possibilities.
+                            <br>
+                            To know more about this disease visit <a href="https://www.pestnet.org/fact_sheets/cassava_green_mottle_068.htm">here</a>
+                        </blockquote>
+                        
+                    </li>
+                    <li>
+                        <img src="{{url_for('static', filename='images/CMD.jpg')}}">
+                        <br>
+                        <cite>Cassava Mosaic Disease</cite>
+                        <blockquote>Cassava is vulnerable to a broad range of diseases caused by viruses. Among them, 
+                            cassava mosaic disease (CMD) is the most severe and widespread, limiting production of the 
+                            crop in sub-Saharan Africa. CMD produces a variety of foliar symptoms that include mosaic, mottling,
+                             misshapen and twisted leaflets, and an overall reduction in size of leaves and plants. CMD-affected 
+                             cassava plants produce few or no tubers depending on the severity of the disease and the age of the 
+                             plant at the time of infection.
+                             <br>
+                            To know more about this disease visit <a href="https://www.apsnet.org/edcenter/apsnetfeatures/Pages/cassava.aspx">here</a>
+                        </blockquote>
+                       
+                    </li>
+                    <li>
+                        <img src="{{url_for('static', filename='images/Healthy.jpg')}}">
+                        <br>
+                        <cite>Healthy</cite>
+                        <blockquote>This is a Healthy Cassava leaf it was fourth categorie in our dataset.</blockquote>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div>
+           <p>To know more about this project go to About-Page Or go back to top</p>
+           <ul>
+             <li><a class="footer-about" href="{{ url_for('about_page')}}">About</a></li>
+             <li><a class="footer-about footer-backtop" href="#top">Back To Top</a></li>
+           </ul> 
+        </div>
+    </footer>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+  
+   

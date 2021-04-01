@@ -1,0 +1,61 @@
+<!--extend base file-->
+{% extends 'base.html' %}
+
+<!--title section-->
+{% block title %}
+ About
+{% endblock %}
+
+<!-- content section-->
+{% block content %}
+
+ <!--  About section here -->
+
+    <section class="about">
+
+             <h2>About Project</h2>
+             <div class="about-div">
+
+                  <div>
+                    <ul class="features-list"  >
+                        <li>This is Multi-label image Classification project.</li>
+                        <li>We had five <a href="{{ url_for('categories_page') }}">categories</a> images to classify using Deep learning.</li>
+                        <li>After training on five different models CropNet-MobileNetV3 was best.</li>
+                        <li>This web app is using CropNet from tensorflow with 88% accuracy.</li>
+                        <li>Code for this whole project is given <a href="https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection">here</a></li>
+                    </ul>
+                  </div>
+             </div>
+
+             <h2>Tools & Libraries </h2>
+             <div class="tools-div">
+
+                 <div class="sub-div">
+                    <ul class="tools-list" style="list-style-image: url({{url_for('static', filename='images/bullet.svg')}})">
+                        <li>Python</li>
+                        <li>Tensorflow</li>
+                        <li>Keras</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>PIL</li>
+                        <li>Tensorflow-hub</li>
+                        <li>Flask</li>
+                        <li>Html</li>
+                        <li>CSS</li>
+
+                    </ul>
+                 </div>
+             </div>
+
+            <footer>
+                <p>Go Back To Top</p>
+                <a href='#top'>Page Top</a>
+            </footer>
+
+    </section>
+
+
+{% endblock %}
+
+
+
