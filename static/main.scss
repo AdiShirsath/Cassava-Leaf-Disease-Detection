@@ -322,7 +322,20 @@ section.about{
         padding: 1.2em;
         padding-left: 7em;
         
-       
+        a{
+            color: white;
+            border:3px solid;
+            border-color: white;
+            border-radius: .7em;
+            text-decoration: none;
+
+            &:hover{
+                font-weight: bold;
+                color:black;
+                background: white;
+
+            }
+        } 
 
         div{
 
@@ -431,6 +444,24 @@ div.prediction{
         
         
     }
+    
+    .retry{
+        font-size:2em;
+    font-family: Metal Mania;
+    padding:1em;
+    text-align: center;
+    a{
+        text-decoration: none;
+        background: var(--primary-color);
+        padding: .2em;
+        border-radius: 3em;
+        color: black;
 
+        &:hover{
+            color: white;
+            
+        }
+    }
+
+    }
 }
-

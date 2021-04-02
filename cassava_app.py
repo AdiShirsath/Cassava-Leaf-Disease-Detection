@@ -7,7 +7,8 @@ import os
 
 
 app = Flask(__name__)
-model = load_model('cropnet_1.h5', custom_objects={'KerasLayer': hub.KerasLayer})
+model=1
+# model = load_model('cropnet_1.h5', custom_objects={'KerasLayer': hub.KerasLayer})
 disease_names = ['Cassava Bacterial Blight', 'Cassava Brown Streak Disease', 'Cassava Green Mottle', 'Cassava Mosaic Disease', 'Healthy']
 
 # function to process image and predict results

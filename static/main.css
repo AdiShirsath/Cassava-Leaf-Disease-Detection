@@ -283,6 +283,20 @@ section.about .about-div {
   padding-left: 7em;
 }
 
+section.about .about-div a {
+  color: white;
+  border: 3px solid;
+  border-color: white;
+  border-radius: .7em;
+  text-decoration: none;
+}
+
+section.about .about-div a:hover {
+  font-weight: bold;
+  color: black;
+  background: white;
+}
+
 section.about .about-div div ul.features-list {
   margin: 0;
   color: white;
@@ -366,5 +380,24 @@ div.prediction h1 {
 div.prediction .predicted-class h2 {
   font-size: 2em;
   font-family: Metal Mania;
+}
+
+div.prediction .retry {
+  font-size: 2em;
+  font-family: Metal Mania;
+  padding: 1em;
+  text-align: center;
+}
+
+div.prediction .retry a {
+  text-decoration: none;
+  background: var(--primary-color);
+  padding: .2em;
+  border-radius: 3em;
+  color: black;
+}
+
+div.prediction .retry a:hover {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
