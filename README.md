@@ -13,7 +13,7 @@ African farmers may only have access to mobile-quality cameras with low-bandwidt
 
 ## ***Web-App Demo***:-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![cassava_demo1](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/app_demo/cassava_demo2.gif)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![cassava_demo1](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/app_demo/cassava_demo2.gif)
 
 ### Mobile version:-
 
