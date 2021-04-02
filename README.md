@@ -10,6 +10,10 @@ may be possible to identify common diseases so they can be treated.
 suffers from being labor-intensive, low-supply and costly. As an added challenge, effective solutions for farmers must perform well under significant constraints, since
 African farmers may only have access to mobile-quality cameras with low-bandwidth.
 
+## App Demo:-
+
+![cassava_demo1](https://github.com/AdiShirsath/Cassava-Leaf-Disease-Detection/blob/main/app_demo/cassava_demo2.gif)
+
 ## Goal:- 
 To classify each cassava image into five disease categories  With our help, farmers may be able to quickly 
 identify diseased plants, potentially saving their crops before they inflict irreparable damage.
