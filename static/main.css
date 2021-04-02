@@ -284,8 +284,8 @@ section.about .about-div {
 }
 
 section.about .about-div a {
-  color: white;
-  border: 3px solid;
+  color: var(--primary-color);
+  border: 2px solid;
   border-color: white;
   border-radius: .7em;
   text-decoration: none;
@@ -399,5 +399,23 @@ div.prediction .retry a {
 
 div.prediction .retry a:hover {
   color: white;
+}
+
+div.false-predicted-class h2 {
+  font-size: 2em;
+  font-family: Metal Mania;
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 800px) {
+  section.about h2 {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section.about .about-div {
+    padding-left: 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
