@@ -1,1 +1,1 @@
-web: gunicorn app:cassava_app  
+web: gunicorn app:app  
