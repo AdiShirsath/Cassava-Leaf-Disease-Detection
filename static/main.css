@@ -404,7 +404,7 @@ div.prediction .retry a:hover {
 div.false-predicted-class h2 {
   font-size: 2em;
   font-family: Metal Mania;
-  color: var(--primary-color);
+  color: #641E16;
 }
 
 @media only screen and (max-width: 800px) {
