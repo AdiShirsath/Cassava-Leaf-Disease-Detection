@@ -56,6 +56,12 @@ def about_page():
     return render_template("about.html")
 
 
+app.get('/app/:id', checkUserAuth, findApp, renderView, sendJSON);
+
+function checkUserAuth(req, res, next) {
+  if (req.session.user) return next();
+  return next(new NotAuthorizedError());
+}
 
 if __name__ == '__main__':
     app.run()
