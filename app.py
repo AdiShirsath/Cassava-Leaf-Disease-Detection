@@ -5,12 +5,21 @@ import tensorflow_hub as hub
 from tensorflow.keras.preprocessing import image
 import os
 from flask_ngrok import run_with_ngrok
+from rq import Queue
+from worker import conn
+from utils import count_words_at_url
+
+
 
 app = Flask(__name__)
 model = load_model('cropnet_1.h5', custom_objects={'KerasLayer': hub.KerasLayer})
 disease_names = ['Cassava Bacterial Blight', 'Cassava Brown Streak Disease', 'Cassava Green Mottle', 'Cassava Mosaic Disease', 'Healthy']
 uploaded_folder="static/images/uploaded"
 
+
+q = Queue(connection=conn)
+
+result = q.enqueue(count_words_at_url, 'http://heroku.com')
 
 # function to process image and predict results
 def process_predict(image_path, model):
