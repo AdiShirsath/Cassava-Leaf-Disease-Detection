@@ -56,20 +56,5 @@ def about_page():
     return render_template("about.html")
 
 
-import requests
-
-def count_words_at_url(url):
-    resp = requests.get(url)
-    return len(resp.text.split())
-
-from rq import Queue
-from worker import conn
-
-q = Queue(connection=conn)
-
-result = q.enqueue(count_words_at_url, 'http://heroku.com')
-
-
-
 if __name__ == '__main__':
     app.run()
