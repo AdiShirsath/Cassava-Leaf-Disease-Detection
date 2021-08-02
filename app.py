@@ -4,10 +4,7 @@ import numpy as np
 import tensorflow_hub as hub
 from tensorflow.keras.preprocessing import image
 import os
-from flask_ngrok import run_with_ngrok
-from rq import Queue
-from worker import conn
-from utils import count_words_at_url
+
 
 
 
@@ -17,9 +14,6 @@ disease_names = ['Cassava Bacterial Blight', 'Cassava Brown Streak Disease', 'Ca
 uploaded_folder="static/images/uploaded"
 
 
-q = Queue(connection=conn)
-
-result = q.enqueue(count_words_at_url, 'http://heroku.com')
 
 # function to process image and predict results
 def process_predict(image_path, model):
@@ -37,7 +31,6 @@ def process_predict(image_path, model):
     return pred, pred_probs
 
 
-run_with_ngrok(app)
 @app.route('/', methods=['GET', 'POST'])
 def home_page():
   if request.method == 'POST':
